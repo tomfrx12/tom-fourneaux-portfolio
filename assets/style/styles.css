@@ -1,48 +1,115 @@
 :root{
-font-family: 'Fira Code', sans-serif;
+font-family: "hack", sans-serif;
+
+--font-size-4: 0.25rem;
+--font-size-8: 0.5rem;
+--font-size-12: 0.75rem;
+--font-size-16: 1rem;
+
+--font-weight-400: 400;
+--font-weight-700: 700;
+
+--color-white: #999999;
+--color-white-hover: #ffffff;
+--color-black: #000000;
+--color-primary: #E21022;
 }
 
-/* body {
-    height:100em;
-    background-color:black;
-    margin: 0;
+body {
+    background-color: #111111;
+    background-image: url("/assets/img/background-pattern.png");
+    background-size: 100% 95%;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    color: var(--color-white);
 }
 
-header{
-    background-color:rgb(255, 255, 255);
-    height: 100px;
-}
-
-footer{
-    background-color:rgb(255, 255, 255);
-    height: 100px;
-}
-
-.header-footer{
-    padding-bottom: 2em;
-    padding-top: 2em;
-}
-
-.navig {
-    list-style: None;
+.navig{
     display: flex;
-    gap: 50px;
-    margin: 0;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
 }
 
 .navig img{
-    margin-left: 30px;
-    max-height: 100px;
-}   
+    width: 10rem;
+}
 
-.pages{
-    background-color: red;
-    color: black;
-    text-decoration: None;
-    border: solid;
-    padding: 10px;
-    align-content: center;
-    width: 100px;
-    height: 40px;
-} */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background-color: var(--color-black);
+}
 
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--color-white);
+    display: block;
+}
+
+.sidenav a:hover {
+    color: var(--color-white-hover);
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 4rem;
+}
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.sidenav.active {
+    right: 0;
+}
+
+.burger-icon span {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: var(--color-white);
+    margin: 6px 0;
+}
+
+footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav {
+    display: flex;
+    gap: 40px;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo img {
+    max-height: 1.25rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: var(--font-size-8);
+}
+
+.mentions_legales {
+    color: var(--color-white);
+}
