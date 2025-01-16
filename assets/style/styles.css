@@ -17,7 +17,7 @@ font-family: "hack", sans-serif;
 
 body {
     background-color: #111111;
-    background-image: url("assets/img/background-pattern.png");
+    background-image: url("../img/background-pattern.png");
     background-size: 100% 95%;
     background-repeat: no-repeat;
     background-position: right;
@@ -107,12 +107,12 @@ footer nav {
 }
 
 .logo img {
-    max-height: 1.25rem;
+    max-height: 1.5rem;
 }
 
 footer p {
     text-align: center;
-    font-size: var(--font-size-8);
+    font-size: var(--font-size-12);
 }
 
 .mentions_legales {
