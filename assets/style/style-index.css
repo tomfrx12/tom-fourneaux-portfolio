@@ -22,7 +22,7 @@ h1, h2, h3 {
 }
 
 h2 {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 h3 {
@@ -51,7 +51,6 @@ h3 {
 }
 
 .a_button {
-    text-decoration: none;
     background-color: var(--color-white-hover);
     color: var(--color-black);
     border-radius: 20px;
