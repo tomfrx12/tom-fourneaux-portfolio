@@ -1,0 +1,27 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    align-self: center;
+    margin: 0px;
+    background-color: var(--color-black);
+    padding: 0px 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-height: 1.5rem;
+}
+
+.contact a {
+    align-self: center;
+    color: var(--color-white);
+    font-size: var(--font-size-12);
+    padding-left: 10px;
+}

@@ -1,3 +1,7 @@
+main {
+    color: var(--color-white-hover);
+}
+
 .me, .xp {
     display: flex;
     flex-direction: column;
