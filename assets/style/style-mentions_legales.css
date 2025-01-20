@@ -13,6 +13,7 @@ h1 {
 }
 
 h2 {
+    padding-left: 10px;
     margin: 40px 0px 10px 0px;
     text-align: left;
     font-size: var(--font-size-16);
@@ -27,7 +28,7 @@ h2 {
     list-style-type: none;
     margin: 0px;
     font-size: var(--font-size-12);
-    padding-left: 20px;
+    padding-left: 2erm;
 }
 
 .infos li::before{
@@ -37,9 +38,9 @@ h2 {
 main p {
     font-size: var(--font-size-12);
     margin: 0px;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 p a {
-    color: var(--color-white);
+    color: var(--color-white-hover);
 }

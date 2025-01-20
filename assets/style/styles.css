@@ -15,14 +15,24 @@ font-family: "hack", sans-serif;
 --color-primary: #E21022;
 }
 
+html, body {
+    height: 100%
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     background-color: #111111;
     background-image: url("../img/background-pattern.png");
     background-size: 100% 95%;
     background-repeat: no-repeat;
     background-position: right;
+}
 
-    color: var(--color-white);
+main {
+    flex: 1;
+    color: var(--color-white-hover);
 }
 
 .navig{
@@ -34,6 +44,7 @@ body {
 
 .navig img{
     width: 10rem;
+    padding: 0.5rem;
 }
 
 .sidenav {
@@ -85,8 +96,8 @@ body {
 }
 
 footer {
+    margin-top: 20px;
     background-color: var(--color-black);
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -115,6 +126,7 @@ footer nav {
 footer p {
     text-align: center;
     font-size: var(--font-size-12);
+    color: var(--color-white);
 }
 
 .mentions_legales {
