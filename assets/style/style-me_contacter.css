@@ -36,6 +36,10 @@ h1 {
     color: var(--color-white-hover);
 }
 
+.qrcodes a:hover {
+    color: var(--color-white);
+}
+
 .qrcodes img {
     max-width: 100px;
     max-height: 100px;
