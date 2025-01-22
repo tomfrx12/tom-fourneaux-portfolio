@@ -62,13 +62,13 @@ li div span {
 /*       DEV       */
 /* --------------- */
 
-#python, #html, #css, #js, #php, #sql, #linux {
+#python, #html, #css, #js, #php, #sql, #linux, #react, #tailwind {
     background-color: #0e6b0e;
     animation: 1.5s ease forwards;
     width: 0%;
 }
 
-#python:hover, #html:hover, #css:hover, #js:hover, #php:hover, #sql:hover, #linux:hover {
+#python:hover, #html:hover, #css:hover, #js:hover, #php:hover, #sql:hover, #linux:hover, #react:hover, #tailwind:hover {
     background-color: #149414;
 }
 
@@ -98,6 +98,14 @@ li div span {
 
 #linux {
     animation-name: LINUX;
+}
+
+#react {
+    animation-name: REACT;
+}
+
+#tailwind {
+    animation-name: TAILWIND;
 }
 
 @keyframes PYTHON {
@@ -160,6 +168,24 @@ li div span {
     }
     100% {
         width: 5%;
+    }
+}
+
+@keyframes REACT {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 10%;
+    }
+}
+
+@keyframes TAILWIND {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 10%;
     }
 }
 
