@@ -27,7 +27,7 @@ body {
     background-color: #111111;
     background-image: url("../img/background-pattern.png");
     background-size: 100% 95%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: right;
 }
 
