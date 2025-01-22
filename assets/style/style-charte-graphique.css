@@ -24,6 +24,9 @@ h2 {
     align-self: center;
     max-width: 100px;
     margin: 10px;
+    background-color: var(--color-white-hover);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .horizontal {
@@ -33,7 +36,10 @@ h2 {
 
 .horizontal img {
     max-width: 145px;
-    margin: 10px;
+    margin: 5px;
+    padding: 2px;
+    background-color: var(--color-white-hover);
+    border-radius: 5px;
 }
 
 .rules ul {
