@@ -4,10 +4,8 @@ h1 {
     background-color: var(--color-black);
 }
 
-.contact img {
-    max-height: 1.5rem;
-    max-width: 1.5rem;
-    margin: 5px;
+.text {
+    margin-top: 50px;
 }
 
 .contact {
@@ -26,4 +24,19 @@ h1 {
 
 .contact a:hover {
     transform: scale(1.05);
+}
+
+.qrcodes {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.qrcodes a {
+    color: var(--color-white-hover);
+}
+
+.qrcodes img {
+    max-width: 100px;
+    max-height: 100px;
 }
