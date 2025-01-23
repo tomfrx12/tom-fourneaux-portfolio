@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+}
+
+.header-cv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 5px solid var(--color-cv-primary);
+    border-bottom: none;
+}
+
+.gauche {
+    border: 5px solid var(--color-cv-primary);
+    border-top: none;
+    margin-top: -20px;
+}
+
+.header-cv img {
+    align-self: center;
+    max-width: 40%;
+    border-radius: 50rem;
+    border: 5px solid var(--color-cv-primary);
+}
+
+h1 {
+    margin: 40px 0px 10px 0px;
+}
+
+.stage {
+    text-align: center;
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: var(--color-cv-primary);
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--color-white);
+}
+
+.stage p {
+    font-size: var(--font-size-12);
+}
+
+.infos {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.infos li {
+    margin: 20px 0px;
+}
+
+h3 {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.centre-dinteret {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.mail {
+    font-size: var(--font-size-12);
+}
+
+.qrcodes {
+    margin: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.qrcodes div {
+    max-width: 50%;
+}
+
+.qrcodes img {
+    max-width: 50%;
+}
+
+.formation, .experience, .competences {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.formation li, .experience li, .competence li {
+    margin: 10px 0px;
+}
+
+.a_button {
+    background-color: var(--color-white-hover);
+    color: var(--color-black);
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.a_button:hover {
+    transform: scale(1.05);
+}
+
+.competences li::before{
+    content: "- ";
+}
+
+.droite img {
+    max-width: 10%;
+}
+
+.outils, .langages {
+    background-color: var(--color-cv-primary);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px var(--color-white);
+}
+
+.outils li, .langages li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.outils span, .langages span {
+    margin-left: 20px;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    margin: 40px 50px 0px 50px;
+    padding: 10px;
+    background-color: var(--color-black);
+    color: var(--color-white-hover);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s linear;
+}

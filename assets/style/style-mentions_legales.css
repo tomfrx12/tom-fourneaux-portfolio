@@ -28,7 +28,7 @@ h2 {
     list-style-type: none;
     margin: 0px;
     font-size: var(--font-size-12);
-    padding-left: 2erm;
+    padding-left: 2rem;
 }
 
 .infos li::before{
