@@ -29,30 +29,34 @@ body {
     background-position: right;
 }
 
-header {
-    background-color: var(--color-black);
-    position: sticky;
-    top: 0px;
-}
-
 main {
     flex: 1;
     color: var(--color-white-hover);
 }
 
-.navig{
+header {
+    background-color: var(--color-black);
+    position: sticky;
+    top: 0px;
+    padding: 0.5rem;
     display: flex;
     justify-content: space-between;
-    margin-right: 20px;
     align-items: center;
 }
 
-.navig img{
+header img {
     width: 10rem;
-    padding: 0.5rem;
 }
 
-.sidenav {
+.burger-icon span {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: var(--color-white);
+    margin: 6px 0;
+}
+
+.navig {
     height: 100%;
     width: 250px;
     position: fixed;
@@ -62,7 +66,7 @@ main {
     background-color: var(--color-black);
 }
 
-.sidenav a {
+.navig a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -70,34 +74,45 @@ main {
     display: block;
 }
 
-.sidenav a:hover {
+.navig a:hover {
     color: var(--color-white-hover);
 }
 
-.sidenav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 4rem;
+.menu {
+    display: block;
+    cursor: pointer;
+    top: 80px;
+    right: 20rem;
 }
 
-.sidenav .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-}
-
-.sidenav.active {
+header.menu-open .navig {
+    display: flex;
+    flex-direction: column;
+    top: 60px;
     right: 0;
 }
 
-.burger-icon span {
+.burger-icon {
     display: block;
-    width: 20px;
-    height: 1px;
-    background-color: var(--color-white);
-    margin: 6px 0;
+}
+
+header.menu-open .burger-icon {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+    color: var(--color-white-hover);
+}
+
+header.menu-open .close-menu {
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .navig {
+        display: none;
+    }
 }
 
 footer {
@@ -136,4 +151,10 @@ footer p {
 
 .mentions_legales {
     color: var(--color-white);
+}
+    
+@media screen and (max-width: 1024px) {
+    .sidenav {
+        display: none;
+    }
 }

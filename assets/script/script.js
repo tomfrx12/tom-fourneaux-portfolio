@@ -1,14 +1,14 @@
-var sidenav = document.getElementById("mySidenav");
-var openBtn = document.getElementById("openBtn");
-var closeBtn = document.getElementById("closeBtn");
+function toggleMobileNav() {
+    const buttonAction = document.querySelector(".menu");
+    const navMain = document.querySelector("header");
 
-openBtn.onclick = openNav;
-closeBtn.onclick = closeNav;
-
-function openNav() {
-    sidenav.classList.add("active");
+    if (buttonAction) {
+        buttonAction.addEventListener("click", function () {
+        navMain.classList.toggle("menu-open");
+        });
+    }
 }
 
-function closeNav() {
-    sidenav.classList.remove("active");
-}
+window.addEventListener("DOMContentLoaded", function () {
+    toggleMobileNav();
+});
