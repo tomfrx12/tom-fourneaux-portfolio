@@ -1,6 +1,8 @@
 h1 {
-    font-size: var(--font-size-16);
     text-align: center;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-black);
 }
 
 .box {
@@ -8,6 +10,18 @@ h1 {
     background-color: #121212;
     border-radius: 1rem;
     overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box  {
+        width: 75%;
+    }
 }
 
 .header_box {

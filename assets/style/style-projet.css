@@ -1,6 +1,7 @@
 h1 {
     text-align: center;
     margin: 20px;
+    padding: 10px 20px;
     background-color: var(--color-black);
 }
 
@@ -9,6 +10,11 @@ h1 {
     border-radius: 10px;
     box-shadow: 5px 5px 5px var(--color-white-hover);
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
     display: flex;
     flex-direction: column;
 }
@@ -49,4 +55,78 @@ h1 {
 
 .carte a:hover {
     transform: scale(1.05);
+}
+
+.scroll-container {
+    display: none;
+}
+
+.controle-html-css {
+    display: block;
+}
+
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carte {
+        padding: 20px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .carte + .carte {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .logo-portfolio {
+        max-width: 20% !important;
+    }
+
+    .carrousel-interview {
+        max-width: 100% !important;
+    }
+
+    .maquette {
+        max-width: 200% !important;
+        margin: 0px 10px 0px 0px !important; 
+    }
+
+    .container {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .carte img {
+        max-width: 50%;
+        align-self: center;
+    }
+
+    .controle-html-css {
+        display: none;
+    }
+
+    .scroll-container {
+        display: block;
+        max-height: 300px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+
+    .scroll-page {
+        display: flex;
+    }
+
+    .carte a {
+        display: flex;
+    }
+
+    .carte a:hover {
+        transform: scale(1.15);
+    }
 }

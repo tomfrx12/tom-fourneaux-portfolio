@@ -1,6 +1,7 @@
 h1 {
     text-align: center;
     margin: 20px;
+    padding: 10px 20px;
     background-color: var(--color-black);
 }
 
@@ -43,4 +44,36 @@ h1 {
 .qrcodes img {
     max-width: 100px;
     max-height: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        align-self: center;
+    }
+    
+    .contact a {
+        font-size: var(--font-size-12);
+    }
+
+    p {
+        font-size: var(--font-size-12);
+    }
+
+    .qrcodes {
+        margin-top: 5rem;
+    }
+
+    .qrcodes img {
+        max-width: 10rem;
+        max-height: 10rem;
+    }
+
+    p svg {
+        padding: 10px;
+    }
 }

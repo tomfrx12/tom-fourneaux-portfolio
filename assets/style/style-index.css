@@ -4,6 +4,13 @@
     align-items: center;
 }
 
+.debut-presta {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
 .me img {
     margin: 1rem 0rem;
     border-radius: 10rem;
@@ -49,19 +56,6 @@ h3 {
     display: flex;
     gap: 20px;
 }
-
-.a_button {
-    background-color: var(--color-white-hover);
-    color: var(--color-black);
-    border-radius: 20px;
-    padding: 5px;
-    transition: transform 0.3s ease;
-}
-
-.a_button:hover {
-    transform: scale(1.05);
-}
-
 
 .a_button_projet {
     font-size: var(--font-size-12);
