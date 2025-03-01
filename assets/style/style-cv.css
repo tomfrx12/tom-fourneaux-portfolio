@@ -7,20 +7,31 @@
     flex-direction: column;
     text-align: center;
     border: 5px solid var(--color-cv-primary);
-    border-bottom: none;
 }
 
 .gauche {
-    border: 5px solid var(--color-cv-primary);
-    border-top: none;
-    margin-top: -20px;
+    text-align: left;
 }
 
-.header-cv img {
+.tom {
     align-self: center;
     max-width: 40%;
     border-radius: 50rem;
     border: 5px solid var(--color-cv-primary);
+}
+
+.infos {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.infos li {
+    margin: 20px 0px;
+}
+
+.centre-dinteret {
+    list-style: none;
+    padding-left: 30px;
 }
 
 h1 {
@@ -41,23 +52,9 @@ h1 {
     font-size: var(--font-size-12);
 }
 
-.infos {
-    list-style: none;
-    padding-left: 20px;
-}
-
-.infos li {
-    margin: 20px 0px;
-}
-
 h3 {
     margin-top: 40px;
     margin-left: 10px;
-}
-
-.centre-dinteret {
-    list-style: none;
-    padding-left: 30px;
 }
 
 .mail {
@@ -88,6 +85,11 @@ h3 {
     margin: 10px 0px;
 }
 
+.experience li a {
+    color: var(--color-white);
+    margin-left: 20px;
+}
+
 .a_button {
     background-color: var(--color-white-hover);
     color: var(--color-black);
@@ -105,11 +107,11 @@ h3 {
     content: "- ";
 }
 
-.droite img {
+.outils img, .langages img {
     max-width: 10%;
 }
 
-.outils, .langages {
+.outils-langages {
     background-color: var(--color-cv-primary);
     border-radius: 20px;
     padding: 10px;
@@ -138,4 +140,34 @@ h3 {
     font-weight: bold;
     text-align: center;
     transition: transform 0.2s linear;
+}
+
+@media screen and (min-width: 1024px) {
+    .contenue {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .qrcodes {
+        text-align: left;
+        gap: 40px;
+    }
+    
+    .qrcodes div {
+        max-width: 100%;
+    }
+    
+    .qrcodes img {
+        max-width: 200px;
+        width: 200px;
+    }
+
+    .list-outils-langages {
+        display: inline-block;
+        max-width: 40%;
+    }
+
+    .list-outils-langages img {
+        max-width: 20%;
+    }
 }
