@@ -66,8 +66,41 @@ h3 {
     margin-top: 10px;
 }
 
+.presentation p {
+    margin: 0px 0px 20px 20px;
+    font-size: var(--font-size-12);
+    border-left: 5px solid #ff6347;
+    padding: 0px 15px;
+}
+
+.text-image img {
+    width: auto;
+    max-width: 90%;
+    padding: 15px;
+}
+
 @media screen and (min-width: 1024px) {
     .me img {
-        width: 10%;
+        width: 20%;
+    }
+
+    .text-image {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-image img {
+        align-self: center;
+        width: auto;
+        max-width: 35%;
+        padding: 15px;
+    }
+
+    .presentation p {
+        margin-top: 2.5rem;
+    }
+
+    h2 {
+        margin-top: 5rem;
     }
 }
