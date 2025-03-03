@@ -33,3 +33,5 @@ Il est disponible ici : https://tomfrx12.github.io/tom-fourneaux-portfolio/
 ## Licence
 
 Ce projet a été réalisé dans le cadre d'un projet scolaire à partir de novembre 2024.
+
+Et n'est plus mis à jour, mon portfolio fait en React.js sera mis à jour
