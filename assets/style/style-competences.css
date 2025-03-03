@@ -65,6 +65,7 @@ li div {
 
 li div span {
     margin-left: 10px;
+    color: var(--color-black);
 }
 
 /* --------------- */
